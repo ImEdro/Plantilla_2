@@ -11,8 +11,6 @@
         <meta charset="utf-8" />
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
         <link href="assets/css/now-ui-dashboard.css" rel="stylesheet" />
-        <!-- CSS Just for demo purpose, don't include it in your project -->
-        <link href="assets/demo/demo.css" rel="stylesheet" />
         <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
         <link rel="icon" type="image/png" href="./img/favicon.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -40,7 +38,6 @@
         <meta property="fb:app_id" content="655968634437471">
         <meta property="og:title" content="Now UI Kit by Creative Tim" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="http://demos.creative-tim.com/now-ui-kit/index.html" />
         <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg" />
         <meta property="og:description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free." />
         <meta property="og:site_name" content="Creative Tim" />
