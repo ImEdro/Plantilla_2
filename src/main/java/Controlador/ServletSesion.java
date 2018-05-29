@@ -45,7 +45,7 @@ public class ServletSesion extends HttpServlet {
         if (u == null) {
             r = "null";
         } else {
-            ArrayList <Usuario> a = new ArrayList<>();
+            ArrayList<Usuario> a = new ArrayList<>();
             u.setPassword("*****");
             a.add(u);
             r = new Gson().toJson(a);
@@ -58,6 +58,7 @@ public class ServletSesion extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         // iniciar sesion sesion 
+        ArrayList<String> res = new ArrayList<>();
         String r = "";
         HttpSession respuesta = request.getSession(true);
         String email = request.getParameter("email");
@@ -82,6 +83,8 @@ public class ServletSesion extends HttpServlet {
                         respuesta.setAttribute("sessionNombre", u.getNombre());
                         respuesta.setAttribute("sessionEmail", email);
                         r = "ingresar";
+                        res.add(r);
+                        res.add(u.getNickname());
                     } else {
                         r = "usuario o contraseña erroneo";
                     }
@@ -93,8 +96,9 @@ public class ServletSesion extends HttpServlet {
             }
         }
 
-        response.setContentType("html/text");
-        response.getWriter().write(r);
+        String json = new Gson().toJson(res);
+        response.setContentType("application/json");
+        response.getWriter().write(json);
     }
 
     @Override
@@ -107,6 +111,5 @@ public class ServletSesion extends HttpServlet {
         session.removeAttribute("sessionEmail");
         session.invalidate();
     }
-  
-    
+
 }

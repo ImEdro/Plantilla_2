@@ -239,8 +239,6 @@ function AgregarJuego(id) {
     }).done(function (response) {
         var str1 = "null";
         var ad = str1.localeCompare(response);
-        document.getElementById('J').style.display = 'none';
-        document.getElementById('SearchCondicional').style.display = 'block';
         if (ad === 0) {
             ohSnap(" error ", {color: 'red'});
         } else {

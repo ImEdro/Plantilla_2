@@ -10,11 +10,11 @@ function iniciarsesion(correo, clave) {
         type: "POST"
     }).done(function (response) {
         var str1 = "ingresar";
-        var ad = str1.localeCompare(response);
-        if (ad === 0) {
+        var ad = str1.localeCompare(response[0]);
+        if (ad === 0) { 
             document.location.href = "principal.jsp";
         } else {
-            ohSnap(response, {color: 'red'});
+           
         }
     });
 }
@@ -41,26 +41,4 @@ function CrearCuenta(nombre, nick, clave, correo) {
         }
     });
 }
-
-
-function infou() {
-    
-    $.ajax({
-        url: "ServletValidarSesion",
-        type: "GET"
-
-    }).done(function (response) {
-        var str1 = "null";
-        var ad = str1.localeCompare(response);
-        if (ad === 0) {
-            document.location.href = "index.html";
-        } else {
-            document.getElementById('userProfile').innerHTML = '' + response[0].Nombre;
-            document.getElementById('nombreId').innerHTML = 'id#' + response[0].Id;
-            document.getElementById('nombreUser').innerHTML = response[0].Nombre;
-            juegosFav(response[0].Id);
-        }
-    });
-}
-;
 

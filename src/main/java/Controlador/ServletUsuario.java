@@ -40,6 +40,29 @@ public class ServletUsuario extends HttpServlet {
         String id = request.getParameter("IdUsuario");
         ArrayList<Usuario> j = new ArrayList<Usuario>();
         j.add(this.usuarios.FindById(id));
+        for (int i = 0; i < j.size(); i++) {
+            if(j.get(i).getPais()==null  ){
+                j.get(i).setPais("");
+            }
+            if(j.get(i).getDiasJuego()==null){
+                j.get(i).setDiasJuego("");
+            }
+            if(j.get(i).getExperienciaVideojuegos()==null){
+                j.get(i).setExperienciaVideojuegos("");
+            }
+            if(j.get(i).getGenerosJuego()==null){
+                j.get(i).setGenerosJuego("");
+            }
+            if(j.get(i).getHorarioJuego()==null){
+                j.get(i).setHorarioJuego("");
+            }
+            if(j.get(i).getIdiomas()==null){
+                j.get(i).setIdiomas("");
+            }
+            if(j.get(i).getHorasPromedioJuego()==null){
+                j.get(i).setHorasPromedioJuego("");
+            }
+        }
         String json = new Gson().toJson(j);
         response.setContentType("application/json");
         response.getWriter().write(json);

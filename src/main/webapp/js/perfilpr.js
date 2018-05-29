@@ -8,7 +8,6 @@ function infoPerfilpr() {
     Limpiar();
     document.getElementById('InfoPerfil').style.display = 'block';
     var id = document.getElementById('nickname').value;
-    alert(id);
     var parametros = {
         "IdUsuario": id
     };

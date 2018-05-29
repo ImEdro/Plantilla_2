@@ -86,7 +86,7 @@
 
                 <div class="navbar-translate">
                     <a class="navbar-brand" href="#" rel="tooltip" title="Home" data-placement="bottom" onclick="inicio()">
-                        XGames
+                        EngineGames
                     </a>
                 </div>
                 <div class="collapse navbar-collapse justify-content-end" data-nav-image="./assets/img/blurred-image-1.jpg">

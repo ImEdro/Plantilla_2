@@ -49,7 +49,6 @@ public class ServletCrearCuenta extends HttpServlet {
         String password = request.getParameter("password");
         String nombre = request.getParameter("nombre");
         String nick = request.getParameter("nick");
-        String pais = request.getParameter("pais");
 
         Pattern p = Pattern.compile("^([0-9a-zA-Z]([_.w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-w]*[0-9a-zA-Z].)+([a-zA-Z]{2,9}.)+[a-zA-Z]{2,3})$");
         Matcher m = p.matcher(email);

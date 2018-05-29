@@ -175,7 +175,7 @@ function AceptarSolicitud(id) {
     }).done(function (response) {
         Notificaciones();
         amigos();
-        ohSnap(response, {color: 'red'});
+        
     });
 }
 

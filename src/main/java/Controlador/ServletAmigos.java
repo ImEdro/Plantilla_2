@@ -66,6 +66,7 @@ public class ServletAmigos extends HttpServlet {
         HttpSession respuesta = request.getSession();
         String email = (String) respuesta.getAttribute("sessionEmail");
         Usuario u1 = usu.buscar2(email),u2=usu.FindById(id);
+        System.out.println((amigos.findAll().size()+1)+"  id1 "+id+"    id2 "+u1.getNickname());
         Amigo a= new Amigo(""+(amigos.findAll().size()+1), id, u1.getNickname());
         amigos.insert(a);
         a= new Amigo(""+(amigos.findAll().size()+1), u1.getNickname(), id);

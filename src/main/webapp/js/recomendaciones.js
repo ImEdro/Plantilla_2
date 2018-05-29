@@ -12,7 +12,7 @@ function recomendacionJuegos() {
                     '<tr>' +
                     '<td class="text-left" style="color:#000000";>' + inventario[i].Nombre + '</td>' +
                     '<td class="td-actions text-right" style="color:#000000";>' +
-                    '<button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">' +
+                    '<button type="button" onclick="AgregarJuego('+inventario[i].Id+')" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">' +
                     '<i class="now-ui-icons ui-1_simple-add"></i>' +
                     '</button>' +
                     '<button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">' +
