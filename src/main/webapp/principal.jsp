@@ -25,22 +25,6 @@
         <link href="css/bootstrap.min_1.css" rel="stylesheet" />
         <link href="css/now-ui-kit_1.css" rel="stylesheet" />
         <link href="css/chats.css" rel="stylesheet" />
-        <!-- Canonical SEO -->
-        <link rel="canonical" href="https://www.creative-tim.com/product/now-ui-kit" />
-        <!--  Social tags      -->
-        <meta name="keywords" content="bootstrap 4, bootstrap 4 uit kit, bootstrap 4 kit, now ui, now ui kit, creative tim, html kit, html css template, web template, bootstrap, bootstrap 4, css3 template, frontend, responsive bootstrap template, bootstrap ui kit, responsive ui kit">
-        <meta name="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
-        <!-- Schema.org markup for Google+ -->
-        <meta itemprop="name" content="Now UI Kit by Creative Tim">
-        <meta itemprop="description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free.">
-        <meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg">
-        <!-- Open Graph data -->
-        <meta property="fb:app_id" content="655968634437471">
-        <meta property="og:title" content="Now UI Kit by Creative Tim" />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg" />
-        <meta property="og:description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free." />
-        <meta property="og:site_name" content="Creative Tim" />
     </head>
     <body class="index-page sidebar-collapse">
 
