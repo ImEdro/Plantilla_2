@@ -10,18 +10,18 @@
     <head>
         <meta charset="utf-8" />
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/assets/css/now-ui-dashboard.css?v=1.0.1" rel="stylesheet" />
+        <link href="/assets/css/now-ui-dashboard.css" rel="stylesheet" />
         <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
         <link rel="icon" type="image/png" href="./img/favicon.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title> X games</title>
+        <title> EngineGames </title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
         <!-- CSS Files -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link href="css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+        <link href="css/now-ui-kit.css" rel="stylesheet" />
         <!-- Canonical SEO -->
         <link rel="canonical" href="https://www.creative-tim.com/product/now-ui-kit" />
         <!--  Social tags      -->
@@ -42,13 +42,7 @@
         <meta name="twitter:label1" content="Product Type">
         <meta name="twitter:data2" content="Free">
         <meta name="twitter:label2" content="Price">
-        <!-- Open Graph data -->
-        <meta property="fb:app_id" content="655968634437471">
-        <meta property="og:title" content="Now UI Kit by Creative Tim" />
-        <meta property="og:type" content="article" />
-        <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg" />
-        <meta property="og:description" content="Start your development with a beautiful Bootstrap 4 UI kit. It is yours Free." />
-        <meta property="og:site_name" content="Creative Tim" />
+        
     </head>
     <body class="index-page sidebar-collapse">
 
@@ -60,8 +54,8 @@
         <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
             <div class="container">
                 <div class="navbar-translate">
-                    <a class="navbar-brand" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
-                        X games
+                    <a class="navbar-brand" rel="tooltip" title="Designed by EngineGames" data-placement="bottom" target="_blank">
+                        EngineGames
                     </a>
                     <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-bar bar1"></span>
@@ -80,19 +74,19 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/EngineGamesUSA" target="_blank">
                                 <i class="fa fa-twitter"></i>
                                 <p class="d-lg-none d-xl-none">Twitter</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/EngineGames-2050950405180142/" target="_blank">
                                 <i class="fa fa-facebook-square"></i>
                                 <p class="d-lg-none d-xl-none">Facebook</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="" target="_blank">
                                 <i class="fa fa-instagram"></i>
                                 <p class="d-lg-none d-xl-none">Instagram</p>
                             </a>
@@ -236,32 +230,32 @@
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons users_circle-08"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Nickname..." id="email">
+                                    <input type="text" class="form-control" placeholder="Nickname..." id="nick1">
                                 </div>
                                 <h6>Nombre</h6>
                                 <div class="input-group form-group-no-border input-lg">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons text_caps-small"></i>
                                     </span>
-                                    <input type="text" placeholder="Nombre..." class="form-control" id="name"/>
+                                    <input type="text" placeholder="Nombre..." class="form-control" id="name1"/>
                                 </div>
                                 <h6>Contraseña</h6>
                                 <div class="input-group form-group-no-border input-lg">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons objects_key-25"></i>
                                     </span>
-                                    <input type="password" placeholder="Password..." class="form-control" id="password"/>
+                                    <input type="password" placeholder="Password..." class="form-control" id="password1"/>
                                 </div>
                                 <h6>Correo</h6>
                                 <div class="input-group form-group-no-border input-lg">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons ui-1_email-85"></i>
                                     </span>
-                                    <input type="text" placeholder="Correo..." class="form-control" id="correo"/>
+                                    <input type="text" placeholder="Correo..." class="form-control" id="correo1"/>
                                 </div>
                             </div>
                             <div class="footer text-center">
-                                <a class="btn btn-primary btn-round btn-lg btn-block" >Empezemos</a>
+                                <a class="btn btn-primary btn-round btn-lg btn-block" onclick=" CrearCuenta($('#name1').val(), $('#nick1').val(), $('#password1').val(),$('#correo1').val())">Empecemos</a>
                             </div>  
                         </div>
                     </div>
@@ -304,7 +298,7 @@
     <script src="js/plugins/jquery.sharrre.js" type="text/javascript"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-
+    
     <script type='text/javascript' src="js/IniciarSesion.js"></script>
     <script type='text/javascript' src="js/ohsnap.js"></script>
     <script type="text/javascript">
