@@ -3,59 +3,82 @@ package DB;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DbConnection {
 
-    private static Connection connection=null;
+    private Connection CONEXION = null;
     
-    public DbConnection(){
-        System.out.println("-------- MySQL JDBC Connection Testing ------------");
+    
+//       public static Connection getConnection() throws SQLException {
+//        if (CONEXION == null) {
+//            try {
+//                Class.forName("com.mysql.jdbc.Driver").newInstance();
+//                //Integracion Log4J
+//            } catch (ClassNotFoundException e) {
+//                throw new SQLException(e);
+//            } catch (InstantiationException e) {
+//                //Integracion Log4J
+//                throw new SQLException(e);
+//            } catch (IllegalAccessException e) {
+//                //Integracion Log4J
+//                throw new SQLException(e);
+//            }
+//            
+//          
+//
+//            try {
+//                CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/sports_time2", "root", "root");
+//            } catch (SQLException e) {
+//                throw new SQLException(e);
+//            }
+//
+//        }
+//
+//        return CONEXION;
+//    }
+    
 
-        try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-
-        } catch (ClassNotFoundException e) {
-            System.out.println("Where is your MySQL JDBC Driver?");
-            e.printStackTrace();
-            return;
-        } catch (InstantiationException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        System.out.println("MySQL JDBC Driver Registered!");
-        this.connection = null;
-        try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "root", "root");
-        } catch (SQLException e) {
-            System.out.println("Connection Failed! Check output console");
-            e.printStackTrace();
-            return;
-        }
-        if (connection != null) {
-            System.out.println("You made it, take control your database now!");
-        } else {
-            System.out.println("Failed to make connection!");
-        }
+    public DbConnection() {
         
+            URI dbUri;
+            try {
+                dbUri = new URI(System.getenv("DATABASE_URL"));
+                System.out.println("--------------------");
+                String username = dbUri.getUserInfo().split(":")[0];
+                String password = dbUri.getUserInfo().split(":")[1];
+                String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+
+                if (CONEXION == null) {
+                    try {
+                        CONEXION = DriverManager.getConnection(dbUrl, username, password);
+                    } catch (SQLException e) {
+                        System.out.println("Connection Failed! Check output console");
+                        e.printStackTrace();
+                    }
+
+                }
+            } catch (URISyntaxException ex) {
+                System.out.println("error");
+            }
+
+    }
+     
+     public Connection getConnection() {
+        return this.CONEXION;
     }
 
-    public Connection getConnection() {
-        return this.connection;
-    }
-
-    public void closeConnection() {
+    public void closeConnection() throws SQLException {
         try {
-            if (connection != null) {
-                connection.close();
-                connection = null;
+            if (CONEXION != null) {
+                CONEXION.close();
+                CONEXION = null;
             }
 
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            //Integracion Log4J
+            throw new SQLException(e);
         }
 
     }
