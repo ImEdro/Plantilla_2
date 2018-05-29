@@ -22,7 +22,7 @@
         <!-- CSS Files -->
         <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/now-ui-kit.css" rel="stylesheet" />
-        
+
     </head>
     <body class="index-page sidebar-collapse">
 
@@ -94,43 +94,15 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img class="d-block w-100" src="http://hdqwalls.com/wallpapers/league-of-legends-game-poster.jpg" alt="First slide">
-                                        <div class="overlay">
-                                            <div class="text">
-                                                <p>
-                                                    Mi texto
-                                                </p>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="carousel-item">
                                         <img class="d-block w-100" src="http://media.comicbook.com/2017/10/wow-wallpapers-hd-1039342.jpg" alt="Second slide">
-                                        <div class="overlay">
-                                            <div class="text">
-                                                <p>
-                                                    Mi texto2
-                                                </p>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="carousel-item">
                                         <img class="d-block w-100" src="https://images8.alphacoders.com/877/thumb-1920-877849.jpg" alt="Third slide">
-                                        <div class="overlay">
-                                            <div class="text">
-                                                <p>
-                                                    Mi texto3
-                                                </p>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div class="carousel-item">
                                         <img class="d-block w-100" src="https://images7.alphacoders.com/521/thumb-1920-521305.png" alt="fourth slide">
-                                        <div class="overlay">
-                                            <div class="text">
-                                                <p>
-                                                    Mi texto4
-                                                </p>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -144,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                        <h6 class="category category-absolute">Designed by EngineGames.</h6>
+                    <h6 class="category category-absolute">Designed by EngineGames.</h6>
                 </div>
             </div>
             <!-- Sart Modal -->
@@ -231,12 +203,12 @@
                                 </div>
                             </div>
                             <div class="footer text-center">
-                                <a class="btn btn-primary btn-round btn-lg btn-block" onclick=" CrearCuenta($('#name1').val(), $('#nick1').val(), $('#password1').val(),$('#correo1').val())">Empecemos</a>
+                                <a class="btn btn-primary btn-round btn-lg btn-block" onclick=" CrearCuenta($('#name1').val(), $('#nick1').val(), $('#password1').val(), $('#correo1').val())">Empecemos</a>
                             </div>  
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
             <!-- Mini Modal -->
             <div class="modal fade modal-mini modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -257,7 +229,7 @@
                 </div>
             </div>
         </div>
-        
+
     </body>
 
     <!--   Core JS Files   -->
@@ -274,22 +246,22 @@
     <script src="js/plugins/jquery.sharrre.js" type="text/javascript"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-    
+
     <script type='text/javascript' src="js/IniciarSesion.js"></script>
     <script type='text/javascript' src="js/ohsnap.js"></script>
     <script type="text/javascript">
-                                        $(document).ready(function () {
-                                            // the body of this function is in js/now-ui-kit.js
-                                            nowuiKit.initSliders();
-                                        });
+                                    $(document).ready(function () {
+                                        // the body of this function is in js/now-ui-kit.js
+                                        nowuiKit.initSliders();
+                                    });
 
-                                        function scrollToDownload() {
+                                    function scrollToDownload() {
 
-                                            if ($('.section-download').length != 0) {
-                                                $("html, body").animate({
-                                                    scrollTop: $('.section-download').offset().top
-                                                }, 1000);
-                                            }
+                                        if ($('.section-download').length != 0) {
+                                            $("html, body").animate({
+                                                scrollTop: $('.section-download').offset().top
+                                            }, 1000);
                                         }
+                                    }
     </script>
 </html>
