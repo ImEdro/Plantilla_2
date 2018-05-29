@@ -134,5 +134,21 @@
         <servlet-name>ServletRecomendacionUsuarios</servlet-name>
         <url-pattern>/ServletRecomendacionUsuarios</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletCalificacionComentarios</servlet-name>
+        <servlet-class>Controlador.ServletCalificacionComentarios</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCalificacionComentarios</servlet-name>
+        <url-pattern>/ServletCalificacionComentarios</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletCalificacionJuego</servlet-name>
+        <servlet-class>Controlador.ServletCalificacionJuego</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCalificacionJuego</servlet-name>
+        <url-pattern>/ServletCalificacionJuego</url-pattern>
+    </servlet-mapping> 
     
 </web-app>
